@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-from scapy.all import ICMP, IP, sr1
+from scapy.all import ICMP, IP, sr1 , conf
+conf.verb = 0  # disables all non-critical scapy output
 import ipaddress
 import argparse
 import sys
