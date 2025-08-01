@@ -2,9 +2,14 @@
 
 from scapy.all import ICMP, IP, sr1 , conf
 conf.verb = 0  # disables all non-critical scapy output
+
 import ipaddress
 import argparse
 import sys
+import logging
+
+# Suppress scapy runtime noise
+logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 
 def get_targets(target):
     try:
