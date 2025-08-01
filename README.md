@@ -17,4 +17,4 @@ pipx install scapy
 
 USAGE:
 
-python3 pingsweep.py Target {subnet/range/single IP (e.g. 192.168.1.0/24, 192.168.1.1)}
+python3 pingsweep.py Target {subnet/range/single IP (e.g. 192.168.1.0/24, 192.168.1.1)} -o OUTPUT.txt
